@@ -1,13 +1,16 @@
-pipline {
- agent any
+ pipline {
+   agent any
  
  stages {
  
     stage('build')
-	{
+    {
+     steps 
+       {
 	  sh 'ant -f build.xml -V' 
 	}
-	
- }  
+    }
+
+  }  
   
  }
